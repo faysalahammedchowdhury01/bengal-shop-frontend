@@ -1,3 +1,0 @@
-# cross button on product details modal
-# wishlist fuctionality and page.
-# beautiful cross button 
