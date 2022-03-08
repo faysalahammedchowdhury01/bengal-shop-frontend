@@ -1,8 +1,18 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useEffect } from 'react';
+import { FaTimes } from 'react-icons/fa';
 import classes from '../styles/Modal.module.css';
 
-const Modal = ({ width, height, maxHeight, showModal, setShowModal, children, background }) => {
+const Modal = ({
+    width,
+    height,
+    maxHeight,
+    showModal,
+    setShowModal,
+    children,
+    background,
+    showCloseBtn = true,
+}) => {
     // overflow is hidden and shown based on modal open and close
     useEffect(() => {
         // eslint-disable-next-line no-unused-expressions
@@ -23,6 +33,15 @@ const Modal = ({ width, height, maxHeight, showModal, setShowModal, children, ba
                     background,
                 }}
             >
+                {showCloseBtn && (
+                    <button
+                        type="button"
+                        onClick={() => setShowModal(false)}
+                        className={classes.closeModalBtn}
+                    >
+                        <FaTimes />
+                    </button>
+                )}
                 <div
                     className={classes.modalContent}
                     style={{

@@ -1,5 +1,5 @@
 .navBtn {
-  @apply flex items-center bg-[#f2f2f2] lg:bg-transparent hover:bg-[#f2f2f2] w-full text-center p-3 rounded lg:rounded-full;
+  @apply flex items-center !bg-[#f2f2f2] lg:!bg-transparent hover:!bg-[#f2f2f2] w-full text-center p-3 rounded lg:rounded-full;
   margin-left: 10px !important;
 }
 

@@ -20,7 +20,7 @@
 }
 
 .quantityBox span.quantity {
-  @apply !bg-white !text-[#27ae60] !text-2xl cursor-text;
+  @apply !bg-white !text-[#27ae60] !text-xl cursor-text;
 }
 
 .productDetailsBtn {

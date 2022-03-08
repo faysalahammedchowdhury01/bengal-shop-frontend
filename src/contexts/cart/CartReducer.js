@@ -3,7 +3,11 @@ import { ADD_ONE_QUANTITY, ADD_TO_CART, REMOVE_ITEM, SUB_ONE_QUANTITY } from './
 const CartReducer = (state, action) => {
     switch (action.type) {
         case ADD_TO_CART: {
+            const newCart = [...state.cart];
             const newItem = { ...action.payload };
+            const isExist =
+                newCart.findIndex((item) => item.productId === newItem.productId) !== -1;
+            if (isExist) return state;
             newItem.quantity = 1;
             return {
                 ...state,

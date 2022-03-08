@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import React, { useContext } from 'react';
 import {
     AiFillEye,
@@ -7,6 +6,7 @@ import {
     AiOutlineMinus,
     AiOutlinePlus,
     AiOutlineShareAlt,
+    // eslint-disable-next-line prettier/prettier
     AiOutlineStar
 } from 'react-icons/ai';
 import Rating from 'react-rating';
@@ -68,7 +68,8 @@ const ProductDetailsModal = ({
                                 <h4 className={classes.quantityText}>QUANTITY</h4>
                             </div>
                             <div className={classes.quantityBox}>
-                                <button type='button'
+                                <button
+                                    type="button"
                                     disabled={quantityOfThisProductInCart === 1}
                                     onClick={() => subOneQuantity(productId)}
                                 >
@@ -77,7 +78,7 @@ const ProductDetailsModal = ({
                                 <span className={classes.quantity}>
                                     {quantityOfThisProductInCart}
                                 </span>
-                                <button type='button' onClick={() => addOneQuantity(productId)}>
+                                <button type="button" onClick={() => addOneQuantity(productId)}>
                                     <AiOutlinePlus />
                                 </button>
                             </div>
@@ -102,11 +103,11 @@ const ProductDetailsModal = ({
                         </Button>
                     </div>
                     <div className={classes.wishlistAndShareBox}>
-                        <button type='button' className={classes.item}>
+                        <button type="button" className={classes.item}>
                             <AiOutlineHeart fontSize="18px" />
                             <span>Add to Wishlist</span>
                         </button>
-                        <button type='button' className={classes.item}>
+                        <button type="button" className={classes.item}>
                             <AiOutlineShareAlt fontSize="18px" />
                             <span>Share</span>
                         </button>

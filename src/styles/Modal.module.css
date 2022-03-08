@@ -7,15 +7,13 @@
 }
 
 .modalBody {
-  @apply rounded-2xl bg-white overflow-hidden;
+  @apply rounded-2xl bg-white overflow-hidden relative;
 }
 
 .modalContent {
   @apply w-96 h-96 max-w-full;
 }
-/* 
-.modalContent::-webkit-scrollbar,
-.modalContent::-webkit-scrollbar-track,
-.modalContent::-webkit-scrollbar-thumb {
-  border-radius: 40px !important;
-} */
+
+.closeModalBtn {
+  @apply absolute top-2 right-2 text-xl w-8 h-8 !bg-red-500 text-white flex items-center justify-center rounded-full;
+}
