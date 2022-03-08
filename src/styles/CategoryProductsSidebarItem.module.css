@@ -1,0 +1,15 @@
+.categoryProductsSidebarItem {
+  @apply border border-[#f2f2f2] rounded-md overflow-hidden my-10 first:mt-0 last:mb-0;
+}
+
+.categoryProductsSidebarItem > button {
+  @apply w-full px-5 text-left bg-[#ebfaeb] font-semibold text-gray-800 py-4  flex justify-between items-center;
+}
+
+.categoryProductsSidebarItemContent {
+  @apply bg-white px-5 py-4 hidden;
+}
+
+.categoryProductsSidebarItem.show .categoryProductsSidebarItemContent {
+  @apply block;
+}

@@ -1,0 +1,19 @@
+.navCategoriesBox {
+  @apply flex flex-col relative;
+}
+
+.navCategoriesBtn {
+  @apply !bg-[#27AE60] flex justify-between items-center py-3 px-5 rounded-3xl text-white z-10;
+}
+
+.navCategoriesHeader {
+  @apply flex justify-between items-center h-16  p-5 border-b;
+}
+
+.navCategoriesHeader img {
+  @apply w-48;
+}
+
+.navCategories {
+  @apply px-5 py-2 h-[calc(100%-64px)] overflow-y-auto;
+}

@@ -1,0 +1,20 @@
+.navRightMainBox {
+  @apply justify-self-end z-20;
+  line-height: 0;
+}
+
+.menuBars {
+  @apply lg:hidden cursor-pointer;
+}
+
+.navRightElements {
+  @apply bg-white shadow-lg lg:shadow-none p-5 container lg:w-auto lg:p-0 rounded lg:bg-transparent absolute lg:static left-0 top-2/4 flex flex-col lg:flex-row items-start lg:items-center space-y-3 lg:space-y-0 lg:space-x-6 text-[#4f4f4f] lg:justify-end z-10 border lg:border-0;
+}
+
+.showNavRightElements {
+  @apply flex;
+}
+
+.hideNavRightElements {
+  @apply hidden lg:flex;
+}

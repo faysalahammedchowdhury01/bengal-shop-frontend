@@ -1,0 +1,3 @@
+.categoryProductsSidebar {
+  @apply sticky h-screen top-10 overflow-y-auto overflow-x-hidden;
+}

@@ -1,0 +1,60 @@
+.thumbnailBox {
+  @apply relative bg-[#f9f9f9] p-5 rounded-xl flex items-center justify-center overflow-hidden;
+}
+
+.productThumbnailOverlay {
+  @apply opacity-0 invisible absolute w-full h-full bg-[#00000085] flex flex-col items-center justify-center;
+}
+
+.addToShoppingBagOverlay {
+  @apply h-full flex items-center text-white text-2xl text-center px-5 cursor-pointer;
+}
+
+.quantityBox {
+  @apply flex items-center justify-center grow space-x-3;
+}
+
+.quantityBox span,
+.quantityBox button {
+  @apply w-10 h-10 flex items-center justify-center text-white border border-white rounded-full cursor-pointer;
+}
+
+.quantityBox span.quantity {
+  @apply !bg-white !text-[#27ae60] !text-2xl cursor-text;
+}
+
+.productDetailsBtn {
+  @apply w-full py-2 text-[#999999] !bg-[#f2f2f2] text-center mt-auto border hover:bg-[#ececec] flex justify-center items-center space-x-2;
+}
+
+.productInfo {
+  @apply flex flex-col items-center py-5 space-y-2;
+}
+
+.productInfo .rating {
+  @apply flex items-start space-x-2;
+}
+
+.rating p {
+  @apply text-[#4f4f4f] text-sm;
+}
+
+.productName {
+  @apply text-lg text-[#333333] font-medium;
+}
+
+.productPrice {
+  @apply flex items-center space-x-3;
+}
+
+.productPrice h3 {
+  @apply text-lg text-[#333333] font-medium;
+}
+
+.productPrice h3.oldPrice {
+  @apply text-sm line-through text-[#9b9b9b];
+}
+
+.productBtnBox {
+  @apply w-full !pt-3;
+}

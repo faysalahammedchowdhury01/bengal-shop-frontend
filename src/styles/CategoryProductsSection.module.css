@@ -1,0 +1,19 @@
+.categoryProductsSection {
+  @apply py-5;
+}
+
+.categoryProductsLayout {
+  @apply grid grid-cols-1 xl:grid-cols-4;
+}
+
+.categoryProductsBoxMain {
+  @apply xl:col-span-3 xl:ml-10 mt-10 xl:mt-0;
+}
+
+.categoryCoverImg {
+  @apply max-w-full mx-auto;
+}
+
+.categoryProductsBox {
+  @apply mt-10;
+}

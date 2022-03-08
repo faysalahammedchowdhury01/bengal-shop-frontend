@@ -1,0 +1,11 @@
+.footerLinksHeader {
+  @apply text-xl text-gray-800 md:text-[#4f4f4f] font-medium capitalize;
+}
+
+.footerLinks {
+  @apply mt-7 flex flex-col space-y-4;
+}
+
+.footerLink {
+  @apply text-[#4f4f4f] hover:text-gray-800 hover:underline;
+}

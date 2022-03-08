@@ -1,0 +1,71 @@
+[
+  {
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/carousel-img-1.png",
+    "name": "Groceries",
+    "subCategories": [
+      {
+        "name": "Rice",
+        "subCategories": [
+          {
+            "name": "Miniket Rice"
+          },
+          {
+            "name": "Chinigura Rice"
+          }
+        ]
+      },
+      {
+        "name": "Onion"
+      },
+      {
+        "name": "Potatoes"
+      }
+    ]
+  },
+  {
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/carousel-img-2.png",
+    "name": "Fish"
+  },
+  {
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/carousel-img-3.png",
+    "name": "Meat"
+  },
+  {
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/carousel-img-4.png",
+    "name": "Vegetables",
+    "subCategories": [
+      {
+        "name": "Green Vegetables"
+      }
+    ]
+  },
+  {
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/carousel-img-5.png",
+    "name": "Fruits",
+    "subCategories": [
+      {
+        "name": "Green Fruits",
+        "subCategories": [
+          {
+            "name": "Mango"
+          },
+          {
+            "name": "Jackfruit"
+          }
+        ]
+      },
+      {
+        "name": "Red Fruits",
+        "subCategories": [
+          {
+            "name": "Orange"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/carousel-img-6.png",
+    "name": "Ice Cream"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/brand-1.png",
+    "name": "Vegan"
+  },
+  {
+    "id": "2",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/brand-2.png",
+    "name": "Premium"
+  },
+  {
+    "id": "3",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/brand-3.png",
+    "name": "Eco"
+  },
+  {
+    "id": "4",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/brand-4.png",
+    "name": "Organic"
+  },
+  {
+    "id": "5",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/brand-5.png",
+    "name": "Vegan 2"
+  },
+  {
+    "id": "6",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/brand-6.png",
+    "name": "Natural"
+  }
+]

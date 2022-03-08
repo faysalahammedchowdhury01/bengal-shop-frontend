@@ -1,0 +1,43 @@
+.footer {
+  @apply bg-[#f5f5f5] py-10;
+}
+
+.footerWidget {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 py-6;
+}
+
+.footerLogoAndText {
+  @apply md:col-span-2;
+}
+
+.footerLogo {
+  @apply w-[280px];
+}
+
+.footerText {
+  @apply text-[#4f4f4f] my-6;
+}
+
+.downloadMethods {
+  @apply flex items-center space-x-3;
+}
+
+.footerCopyrightIconsAndPartners {
+  @apply grid grid-cols-1 lg:grid-cols-3 gap-5 mt-14 items-center;
+}
+
+.socialLinksBox {
+  @apply justify-self-center lg:justify-self-start;
+}
+
+.copyrightText {
+  @apply text-[#828282] text-center;
+}
+
+.partnersBox {
+  @apply row-start-2 lg:row-start-1 lg:col-start-3;
+}
+
+.partnersImg {
+  @apply w-[280px] max-w-[100%] mx-auto lg:mr-0;
+}

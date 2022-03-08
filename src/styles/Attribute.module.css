@@ -1,0 +1,15 @@
+.attributeBox {
+  @apply flex items-center space-x-5;
+}
+
+.attributeImg {
+  @apply w-20;
+}
+
+.attributeHeading {
+  @apply text-[#333333] text-lg font-medium;
+}
+
+.attributeSubHeading {
+  @apply text-sm text-[#828282];
+}

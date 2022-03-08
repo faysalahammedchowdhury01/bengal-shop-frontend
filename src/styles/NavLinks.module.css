@@ -1,0 +1,7 @@
+.navLinks {
+  @apply hidden lg:flex space-x-8 text-[#4f4f4f];
+}
+
+.activeLink {
+  @apply font-bold text-[#333333];
+}

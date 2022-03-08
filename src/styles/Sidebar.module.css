@@ -1,0 +1,27 @@
+.sidebar {
+  @apply w-full h-screen bg-[#000000bd] fixed top-0 left-0 transition-all opacity-0 invisible;
+  line-height: 32px;
+  z-index: 99999999999999999 !important;
+}
+
+.sidebar.sidebarOpen {
+  @apply opacity-100 visible;
+}
+
+.sidebarBody {
+  @apply ml-auto w-96 h-full max-w-[90%] bg-white;
+  transform: translateX(384px);
+  transition: all 0.2s linear;
+}
+
+.sidebarBody.sidebarPositionLeft {
+  transform: translateX(-384px);
+}
+
+.sidebarOpen .sidebarBody {
+  transform: translateX(0);
+}
+
+.sidebarBody.sidebarPositionLeft {
+  @apply mr-auto ml-0;
+}

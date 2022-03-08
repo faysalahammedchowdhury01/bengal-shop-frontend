@@ -1,0 +1,15 @@
+.accountBtn {
+  @apply flex items-center w-full h-12 lg:h-auto bg-[#f2f2f2] lg:bg-transparent lg:hover:bg-[#f2f2f2] rounded lg:rounded-full px-3 py-[5px] lg:pl-1 lg:pr-4;
+}
+
+.accountAvatar {
+  @apply w-[32px] h-[32px] relative flex justify-center items-center rounded-full bg-[#f2f2f2] text-xl uppercase overflow-hidden;
+}
+
+.accountAvatar img {
+  @apply w-[32px] h-[32px] object-cover object-center;
+}
+
+.accountBtnText {
+  @apply ml-1 font-medium;
+}

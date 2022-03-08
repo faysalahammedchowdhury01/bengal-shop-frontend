@@ -1,0 +1,20 @@
+.wishListBtn {
+  @apply relative bg-[#f2f2f2] lg:bg-transparent hover:bg-[#f2f2f2] p-3 lg:p-2 rounded lg:rounded-full flex items-center w-full;
+}
+
+.text {
+  @apply mx-2 font-medium lg:hidden;
+}
+
+.wishListQuantity {
+  @apply lg:text-white lg:absolute -top-2 lg:-top-3 -right-2 lg:bg-red-400 rounded-full  w-5 h-5 text-sm leading-5 font-medium text-center;
+}
+
+@media (max-width: 1023px) {
+  .wishListQuantity::before {
+    content: '(';
+  }
+  .wishListQuantity::after {
+    content: ')';
+  }
+}

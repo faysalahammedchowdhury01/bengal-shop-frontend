@@ -1,0 +1,7 @@
+.promoSection {
+  @apply py-10;
+}
+
+.promoCardsParent {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-[30px];
+}

@@ -1,0 +1,108 @@
+.productDetailsModal {
+  @apply p-10 grid grid-cols-1 lg:grid-cols-2 gap-10;
+}
+
+.productImgBox {
+  @apply bg-[#f9f9f9] rounded;
+}
+
+.productImgBox img {
+  @apply mx-auto;
+}
+
+.productDetailsSide {
+  @apply flex flex-col space-y-4;
+}
+
+.statusBox {
+  @apply flex items-center space-x-5;
+}
+
+.statusBox p {
+  @apply text-[#999999] font-medium;
+}
+
+.statusBox .status.statusGreen {
+  @apply text-[#27ae60];
+}
+
+.statusBox .status.statusRed {
+  @apply text-[#ff2a2a];
+}
+
+.productName {
+  @apply text-xl text-[#333333] font-medium;
+}
+
+.ratingBox {
+  @apply flex space-x-3;
+}
+
+.ratingBox p {
+  @apply text-[#757575] text-[13px] font-medium;
+}
+
+.priceBox {
+  @apply flex items-center space-x-5;
+}
+
+.price {
+  @apply text-2xl font-bold text-[#333333];
+}
+
+.oldPrice {
+  @apply text-xl line-through text-[#9b9b9b];
+}
+
+.smallGreyText {
+  @apply text-[#4f4f4f] text-sm font-medium;
+}
+
+.quantityBoxMain {
+  @apply flex justify-between items-center flex-wrap;
+}
+
+.quantityText {
+  @apply font-medium text-[#4f4f4f];
+}
+
+.smallMuteText {
+  @apply text-sm text-[#999999];
+}
+
+.quantityBox {
+  @apply flex items-center justify-center grow space-x-3;
+}
+
+.quantityBox button,
+.quantityBox span {
+  @apply w-10 h-10 flex items-center justify-center text-gray-800 border border-[#4f4f4f] rounded-full cursor-pointer;
+}
+
+.quantityBox .quantity {
+  @apply font-semibold border bg-[#f2f2f2] border-[#f2f2f2]  rounded-full cursor-text;
+}
+
+.btnBox {
+  @apply w-full flex flex-col space-y-3 pt-3;
+}
+
+.wishlistAndShareBox {
+  @apply flex justify-between items-center pt-2  flex-wrap;
+}
+
+.wishlistAndShareBox .item {
+  @apply flex items-center space-x-1 text-[#4f4f4f];
+}
+
+.viewMoreDetailsBox {
+  @apply mx-auto;
+}
+
+.viewMoreDetailsBox .btn {
+  @apply flex justify-center items-center text-[#4f4f4f] space-x-2;
+}
+
+.viewMoreDetailsBox .btn .text {
+  @apply underline;
+}

@@ -1,0 +1,27 @@
+.dealOfTheWeek {
+  @apply mt-16;
+}
+
+.offerBox {
+  @apply bg-[#FAF4F0] p-20 lg:pt-8 lg:pb-0 rounded-xl grid grid-cols-2 lg:grid-cols-4 gap-5 items-center;
+}
+
+.imgBox {
+  @apply hidden lg:block;
+}
+
+.imgBox img {
+  @apply w-full;
+}
+
+.textBox {
+  @apply col-span-2 text-center;
+}
+
+.textBox .heading {
+  @apply text-2xl font-bold text-[#333333];
+}
+
+.textBox .countdownTimerBox {
+  @apply mt-8 mb-10;
+}

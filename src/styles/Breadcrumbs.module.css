@@ -1,0 +1,26 @@
+.breadcrumbs {
+  @apply flex items-center space-x-14 font-medium relative;
+}
+
+.breadcrumbs li {
+  @apply text-[#999999] hover:underline last:hover:no-underline;
+}
+
+.breadcrumbs li:last-child {
+  @apply text-gray-800;
+}
+
+.breadcrumbs li::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  background-color: #999999;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 28px;
+}
+
+.breadcrumbs li:last-child::after {
+  width: 0;
+}

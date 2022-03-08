@@ -1,0 +1,27 @@
+.categoryProducts {
+  @apply flex flex-col;
+}
+
+.categoryProductsHeading {
+  @apply text-3xl text-[#333333] font-bold;
+}
+
+.info {
+  @apply flex flex-wrap items-center justify-between mb-10 mt-5;
+}
+
+.info p {
+  @apply text-[#999999] font-medium;
+}
+
+.info p .highlight {
+  @apply text-gray-800 font-semibold;
+}
+
+.products {
+  @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10;
+}
+
+.loadMoreBtnBox {
+  @apply text-center mt-5;
+}

@@ -1,0 +1,19 @@
+.categoryItemBox {
+  @apply my-4 cursor-pointer;
+}
+
+.categoryItem {
+  @apply flex w-full justify-between items-center text-[#333333];
+}
+
+.categoryItem img {
+  @apply w-[40px];
+}
+
+.categoryItem p {
+  @apply mr-auto ml-3 font-medium;
+}
+
+.categoryItem .arrow {
+  font-size: 22px;
+}

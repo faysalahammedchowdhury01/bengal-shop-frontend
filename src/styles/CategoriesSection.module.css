@@ -1,0 +1,15 @@
+.categoriesSection {
+  @apply pt-5 pb-10;
+}
+
+.categoryBox {
+  @apply flex flex-col items-center justify-center bg-[#f2f2f2] hover:bg-[#EBFAEB] p-5;
+}
+
+.categoryBox img {
+  @apply w-20;
+}
+
+.categoryBox h5 {
+  @apply text-[#333333] mt-3 font-medium;
+}

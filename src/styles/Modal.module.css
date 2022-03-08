@@ -1,0 +1,21 @@
+.modal {
+  @apply fixed top-0 left-0 z-50 w-full h-full overflow-x-hidden overflow-y-auto outline-none bg-[#000000bd] hidden px-5;
+}
+
+.modalOpen {
+  @apply flex items-center justify-center;
+}
+
+.modalBody {
+  @apply rounded-2xl bg-white overflow-hidden;
+}
+
+.modalContent {
+  @apply w-96 h-96 max-w-full;
+}
+/* 
+.modalContent::-webkit-scrollbar,
+.modalContent::-webkit-scrollbar-track,
+.modalContent::-webkit-scrollbar-thumb {
+  border-radius: 40px !important;
+} */

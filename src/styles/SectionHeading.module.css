@@ -1,0 +1,8 @@
+.sectionHeading {
+  @apply border-b-2 pb-3 relative mb-7;
+}
+
+.sectionHeading::after {
+  @apply w-16 h-1 bg-[#27AE60] absolute bottom-[-3px] left-0 rounded;
+  content: '';
+}

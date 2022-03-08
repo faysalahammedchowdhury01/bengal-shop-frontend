@@ -1,0 +1,23 @@
+.firstColumn {
+  @apply relative grid grid-cols-3 lg:grid-cols-4 items-center;
+}
+
+.logoBoxMain {
+  @apply col-span-2 lg:col-span-1;
+}
+
+.logo {
+  @apply w-64 sm:w-72;
+}
+
+.secondColumn {
+  @apply grid grid-cols-1 lg:grid-cols-4 items-center pt-5;
+}
+
+.specialOfferBox {
+  @apply text-right hidden lg:block text-red-400;
+}
+
+.navLinksBox {
+  @apply col-span-2 flex justify-center;
+}

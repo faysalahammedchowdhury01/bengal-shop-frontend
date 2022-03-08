@@ -1,0 +1,37 @@
+.cartItem {
+  @apply flex justify-between items-center border-b last:border-0 py-3 first:pt-0 last:pb-0;
+}
+
+.itemQuantity {
+  @apply flex flex-col justify-center items-center space-y-1 px-2 py-3 bg-gray-100 rounded-3xl;
+}
+
+.itemQuantity .quantity {
+  @apply font-bold text-gray-800 text-center;
+  width: 30px !important;
+}
+
+.itemDetails {
+  @apply mr-auto grow flex items-center mx-2;
+}
+
+.itemDetails img {
+  @apply w-16;
+}
+
+.itemNameAndPrice {
+  @apply grow ml-2;
+}
+
+.itemNameAndPrice h6 {
+  @apply font-bold text-xs text-[#27ae60];
+}
+
+.itemNameAndPrice h5 {
+  @apply font-semibold text-sm mt-2 flex items-center space-x-1;
+}
+
+.itemRemove {
+  @apply border rounded p-1;
+  font-size: 20px;
+}

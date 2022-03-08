@@ -1,0 +1,15 @@
+.showCounter {
+  @apply flex items-center justify-center space-x-4;
+}
+
+.showCounter .time h3 {
+  @apply text-3xl text-[#FF5E4D] font-bold;
+}
+
+.showCounter .time p {
+  @apply text-[#828282] uppercase font-medium mt-1;
+}
+
+.showCounter .divider {
+  @apply text-[#828282] font-bold self-start mt-[6px];
+}

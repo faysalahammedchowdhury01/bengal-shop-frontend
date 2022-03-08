@@ -1,0 +1,39 @@
+.btn {
+  @apply px-10 py-[13px] text-center rounded transition-all ring-offset-2 focus:ring-2;
+}
+
+.btn.primaryBtn {
+  @apply bg-[#27ae60] text-white hover:bg-[#178344] ring-green-600;
+}
+
+.btn.primaryOutlineBtn {
+  @apply border border-[#27ae60] bg-white ring-green-600 hover:bg-[#27ae60] hover:text-white;
+}
+
+.btn.lightBtn {
+  @apply bg-[#f2f2f2] text-[#4f4f4f] hover:bg-[#dddcdc] ring-[#dddcdc];
+}
+
+.btn.whiteBtn {
+  @apply bg-white text-[#FF5C00] hover:bg-[#f2f2f2] ring-gray-300;
+}
+
+.btn.mediumBtn {
+  @apply font-medium;
+}
+
+.btn.semiboldBtn {
+  @apply font-semibold;
+}
+
+.btn.boldBtn {
+  @apply font-bold;
+}
+
+.btn.btnFullWidth {
+  @apply block w-full text-center py-[14px];
+}
+
+.btn.btnRoundedFull {
+  @apply rounded-full;
+}

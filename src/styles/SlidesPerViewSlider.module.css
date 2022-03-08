@@ -1,0 +1,15 @@
+.sliderSectionHeadingContent {
+  @apply flex items-center justify-between;
+}
+
+.navigationBtn {
+  @apply flex items-center space-x-3;
+}
+
+.navigationBtn button {
+  @apply w-10 h-10 flex items-center justify-center rounded-full bg-[#27AE60] text-white p-2;
+}
+
+.navigationBtn button:disabled {
+  @apply !bg-[#f2f2f2] !text-gray-400 !cursor-not-allowed;
+}

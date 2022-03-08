@@ -1,0 +1,15 @@
+.searchBox {
+  @apply col-span-3 lg:col-span-2 lg:col-start-2 row-start-2 lg:row-start-1 mt-5 lg:mt-0;
+}
+
+.searchForm {
+  @apply lg:w-4/5 mx-auto flex items-center justify-between border border-[#e0e0e0] p-1 px-4 rounded-3xl max-w-full;
+}
+
+.searchInput {
+  @apply grow focus:outline-none p-2 w-4/5;
+}
+
+.searchBtn {
+  @apply text-[#4f4f4f] py-2 rounded-3xl;
+}

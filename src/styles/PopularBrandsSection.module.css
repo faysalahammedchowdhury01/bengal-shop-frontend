@@ -1,0 +1,11 @@
+.popularBrandsSection {
+  @apply pt-5;
+}
+
+.popularBrand {
+  @apply !mt-6;
+}
+
+.popularBrand img {
+  @apply w-28 mx-auto mt-5;
+}

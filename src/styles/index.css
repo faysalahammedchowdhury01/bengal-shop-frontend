@@ -1,0 +1,79 @@
+/* initialize tailwindcss */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* default */
+* {
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9c9c9c;
+}
+
+/* reusable */
+.heading {
+  @apply font-medium text-[28px] text-[#333333];
+}
+
+button:disabled {
+  @apply !cursor-not-allowed;
+}
+
+/* overwrite css */
+.banner-sliders .swiper-pagination {
+  @apply flex flex-col items-end;
+  bottom: auto !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+.banner-sliders .swiper-pagination-bullet {
+  @apply block;
+  margin: 6px 20px !important;
+}
+
+@media (min-width: 1024px) {
+  .banner-sliders .swiper-pagination-bullet {
+    margin: 6px 40px !important;
+  }
+}
+
+.banner-sliders .swiper-pagination-bullet-active {
+  @apply bg-[#FF5C00] relative;
+}
+
+.banner-sliders .swiper-pagination-bullet-active::after {
+  @apply w-full h-full  absolute top-0 left-0 rounded-full border border-[#FF5C00];
+  content: '';
+  transform: scale(2);
+}

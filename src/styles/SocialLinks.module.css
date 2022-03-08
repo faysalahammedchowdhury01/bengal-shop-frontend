@@ -1,0 +1,7 @@
+.socialLinks {
+  @apply flex items-center space-x-5;
+}
+
+.socialLink {
+  @apply text-xl text-[#4f4f4f] hover:text-white hover:bg-[#FF5E4D] p-2 transition-all rounded;
+}
