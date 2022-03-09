@@ -18,14 +18,14 @@ import classes from '../styles/ProductDetailsModal.module.css';
 import Button from './Button';
 import Modal from './Modal';
 
-const ProductDetailsModal = ({
-    product,
-    isProductInCart,
-    quantityOfThisProductInCart,
-    showProductDetailsModal,
-    setShowProductDetailsModal,
-}) => {
-    const { addToCart, addOneQuantity, subOneQuantity } = useContext(CartContext);
+const ProductDetailsModal = ({ product, showProductDetailsModal, setShowProductDetailsModal }) => {
+    const {
+        addToCart,
+        addOneQuantity,
+        subOneQuantity,
+        isThisProductInCart,
+        quantityOfThisProductInCart,
+    } = useContext(CartContext);
     const { addToWishlist, isThisProductInWishlist } = useContext(WishlistContext);
     const { productId, img, name, rating, ratingGiven, price, priceAfterDiscount } = product;
 
@@ -65,7 +65,7 @@ const ProductDetailsModal = ({
                     <div>
                         <p className={classes.smallGreyText}>20 Products sold in last 12 hours</p>
                     </div>
-                    {isProductInCart && (
+                    {isThisProductInCart(productId) && (
                         <div className={classes.quantityBoxMain}>
                             <div>
                                 <h4 className={classes.quantityText}>QUANTITY</h4>
@@ -73,13 +73,13 @@ const ProductDetailsModal = ({
                             <div className={classes.quantityBox}>
                                 <button
                                     type="button"
-                                    disabled={quantityOfThisProductInCart === 1}
+                                    disabled={quantityOfThisProductInCart(productId) === 1}
                                     onClick={() => subOneQuantity(productId)}
                                 >
                                     <AiOutlineMinus />
                                 </button>
                                 <span className={classes.quantity}>
-                                    {quantityOfThisProductInCart}
+                                    {quantityOfThisProductInCart(productId)}
                                 </span>
                                 <button type="button" onClick={() => addOneQuantity(productId)}>
                                     <AiOutlinePlus />
@@ -91,7 +91,7 @@ const ProductDetailsModal = ({
                         </div>
                     )}
                     <div className={classes.btnBox}>
-                        {isProductInCart || (
+                        {isThisProductInCart(productId) || (
                             <Button
                                 onClick={() => addToCart(product)}
                                 roundedFull

@@ -26,6 +26,14 @@ const CartState = ({ children }) => {
         dispatch({ type: SUB_ONE_QUANTITY, payload: id });
     };
 
+    const isThisProductInCart = (id) =>
+        state.cart.filter((item) => item.productId === id).length !== 0;
+
+    const quantityOfThisProductInCart = (id) => {
+        if (!isThisProductInCart) return 0;
+        return state.cart.filter((item) => item.productId === id)[0]?.quantity;
+    };
+
     return (
         <CartContext.Provider
             value={{
@@ -34,6 +42,8 @@ const CartState = ({ children }) => {
                 removeItemFromCart,
                 addOneQuantity,
                 subOneQuantity,
+                isThisProductInCart,
+                quantityOfThisProductInCart,
             }}
         >
             {children}

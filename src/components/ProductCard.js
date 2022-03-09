@@ -9,19 +9,20 @@ import ProductDetailsModal from './ProductDetailsModal';
 
 const ProductCard = ({ product }) => {
     const [showProductDetailsModal, setShowProductDetailsModal] = useState(false);
-    const { cart, addToCart, addOneQuantity, subOneQuantity, removeItemFromCart } =
-        useContext(CartContext);
+    const {
+        addToCart,
+        addOneQuantity,
+        subOneQuantity,
+        removeItemFromCart,
+        isThisProductInCart,
+        quantityOfThisProductInCart,
+    } = useContext(CartContext);
     const { productId, name, img, price, haveDiscount, priceAfterDiscount, rating, ratingGiven } =
         product;
 
-    // check this product is avaiable in cart related work
-    const [thisProductInCart] = cart.filter((cartItem) => cartItem.productId === productId);
-    const isProductInCart = thisProductInCart !== undefined;
-    const quantityOfThisProductInCart = thisProductInCart?.quantity;
-
     // decrease quantity and when quantity is 1 then remove the item from cart
     const decreaseQuantity = (id) => {
-        if (quantityOfThisProductInCart === 1) {
+        if (quantityOfThisProductInCart(productId) === 1) {
             removeItemFromCart(id);
         } else {
             subOneQuantity(id);
@@ -36,13 +37,13 @@ const ProductCard = ({ product }) => {
                     <div
                         className={`group-hover:opacity-100 group-hover:visible ${classes.productThumbnailOverlay}`}
                     >
-                        {isProductInCart ? (
+                        {isThisProductInCart(productId) ? (
                             <div className={classes.quantityBox}>
                                 <button type="button" onClick={() => decreaseQuantity(productId)}>
                                     <AiOutlineMinus />
                                 </button>
                                 <span className={classes.quantity}>
-                                    {quantityOfThisProductInCart}
+                                    {quantityOfThisProductInCart(productId)}
                                 </span>
                                 <button type="button" onClick={() => addOneQuantity(productId)}>
                                     <AiOutlinePlus />
@@ -83,7 +84,7 @@ const ProductCard = ({ product }) => {
                         <h3 className={haveDiscount && classes.oldPrice}>{price} BTD</h3>
                     </div>
                     <div className={classes.productBtnBox}>
-                        {isProductInCart ? (
+                        {isThisProductInCart(productId) ? (
                             <Button
                                 onClick={() => addOneQuantity(productId)}
                                 fullWidth
@@ -91,7 +92,7 @@ const ProductCard = ({ product }) => {
                                 theme="light"
                                 font="semibold"
                             >
-                                {quantityOfThisProductInCart} in Cart
+                                {quantityOfThisProductInCart(productId)} in Cart
                             </Button>
                         ) : (
                             <Button
@@ -109,8 +110,6 @@ const ProductCard = ({ product }) => {
             </div>
             <ProductDetailsModal
                 product={product}
-                isProductInCart={isProductInCart}
-                quantityOfThisProductInCart={quantityOfThisProductInCart}
                 showProductDetailsModal={showProductDetailsModal}
                 setShowProductDetailsModal={setShowProductDetailsModal}
             />

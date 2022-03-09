@@ -49,8 +49,8 @@ const WishlistState = ({ children }) => {
         dispatch({ type: REMOVE_FROM_WISHLIST, payload: id });
     };
 
-    const isThisProductInWishlist = (productId) =>
-        state.wishlists.filter((item) => item.productId === productId).length !== 0;
+    const isThisProductInWishlist = (id) =>
+        state.wishlists.filter((item) => item.productId === id).length !== 0;
 
     return (
         <WishlistContext.Provider
