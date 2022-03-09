@@ -4,11 +4,13 @@ import Footer from './Footer';
 import Header from './Header';
 import OurAttributesSection from './OurAttributesSection';
 import Routes from './Routes';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
     return (
         <CartState>
             <BrowserRouter>
+                <ScrollToTop />
                 <Header />
                 <main>
                     <Routes />
