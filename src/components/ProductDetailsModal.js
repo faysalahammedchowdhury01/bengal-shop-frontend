@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import {
     AiFillEye,
+    AiFillHeart,
     AiFillStar,
     AiOutlineHeart,
     AiOutlineMinus,
@@ -12,6 +13,7 @@ import {
 import Rating from 'react-rating';
 import { Link } from 'react-router-dom';
 import CartContext from '../contexts/cart/CartContext';
+import WishlistContext from '../contexts/wishlist/WishlistContext';
 import classes from '../styles/ProductDetailsModal.module.css';
 import Button from './Button';
 import Modal from './Modal';
@@ -24,6 +26,7 @@ const ProductDetailsModal = ({
     setShowProductDetailsModal,
 }) => {
     const { addToCart, addOneQuantity, subOneQuantity } = useContext(CartContext);
+    const { addToWishlist, isThisProductInWishlist } = useContext(WishlistContext);
     const { productId, img, name, rating, ratingGiven, price, priceAfterDiscount } = product;
 
     return (
@@ -103,10 +106,22 @@ const ProductDetailsModal = ({
                         </Button>
                     </div>
                     <div className={classes.wishlistAndShareBox}>
-                        <button type="button" className={classes.item}>
-                            <AiOutlineHeart fontSize="18px" />
-                            <span>Add to Wishlist</span>
-                        </button>
+                        {isThisProductInWishlist(productId) ? (
+                            <button type="button" className={classes.item}>
+                                <AiFillHeart color="red" fontSize="18px" />
+                                <span>In Wishlist</span>
+                            </button>
+                        ) : (
+                            <button
+                                onClick={() => addToWishlist(product)}
+                                type="button"
+                                className={classes.item}
+                            >
+                                <AiOutlineHeart fontSize="18px" />
+                                <span>Add to Wishlist</span>
+                            </button>
+                        )}
+
                         <button type="button" className={classes.item}>
                             <AiOutlineShareAlt fontSize="18px" />
                             <span>Share</span>
