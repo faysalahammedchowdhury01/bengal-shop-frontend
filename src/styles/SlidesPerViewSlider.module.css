@@ -7,7 +7,7 @@
 }
 
 .navigationBtn button {
-  @apply w-10 h-10 flex items-center justify-center rounded-full bg-[#27AE60] text-white p-2;
+  @apply w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-[#27AE60] text-white p-2;
 }
 
 .navigationBtn button:disabled {

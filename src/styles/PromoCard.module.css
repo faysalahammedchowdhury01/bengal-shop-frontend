@@ -1,11 +1,11 @@
 .promoCard {
-  @apply rounded-xl px-10 py-24 bg-cover bg-center overflow-hidden;
+  @apply rounded-xl px-5 sm:px-10 py-12 sm:py-24 bg-cover bg-center  bg-no-repeat overflow-hidden;
 }
 
 .subHeading {
-  @apply text-[#FF5C00];
+  @apply text-[#FF5C00] text-sm sm:text-lg;
 }
 
 .heading {
-  @apply text-[#333333] font-bold text-3xl mt-2 mb-10 w-52 leading-snug;
+  @apply text-[#333333] font-bold text-xl sm:text-3xl mt-2 mb-10 w-52 leading-snug;
 }

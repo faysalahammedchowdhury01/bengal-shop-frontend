@@ -1,5 +1,9 @@
 .showCounter {
-  @apply flex items-center justify-center space-x-4;
+  @apply grid grid-cols-2 sm:grid-cols-4 gap-5;
+}
+
+.showCounter .time {
+  @apply relative;
 }
 
 .showCounter .time h3 {
@@ -11,5 +15,9 @@
 }
 
 .showCounter .divider {
-  @apply text-[#828282] font-bold self-start mt-[6px];
+  @apply text-[#828282] font-bold absolute top-[6px] -right-[14px];
+}
+
+.showCounter .time:nth-child(2) .divider {
+  @apply !hidden sm:!block;
 }

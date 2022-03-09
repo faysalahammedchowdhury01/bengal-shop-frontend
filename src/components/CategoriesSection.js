@@ -16,9 +16,6 @@ const CategoriesSection = () => (
                 heading="Search by Category"
                 breakpoints={{
                     0: {
-                        slidesPerView: 1,
-                    },
-                    450: {
                         slidesPerView: 2,
                     },
                     650: {

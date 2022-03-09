@@ -14,9 +14,6 @@ const PopularBrandsSection = () => (
                 heading="Popular Brands"
                 breakpoints={{
                     0: {
-                        slidesPerView: 1,
-                    },
-                    450: {
                         slidesPerView: 2,
                     },
                     650: {

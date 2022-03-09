@@ -42,7 +42,7 @@ code {
 
 /* reusable */
 .heading {
-  @apply font-medium text-[28px] text-[#333333];
+  @apply font-medium text-[22px] sm:text-[28px] text-[#333333];
 }
 
 button:disabled {
