@@ -31,7 +31,10 @@ const CartItem = ({ cartItem }) => {
             <div className={classes.itemDetails}>
                 <img src={img} alt={name} />
                 <div className={classes.itemNameAndPrice}>
-                    <h6>{name}</h6>
+                    <h6>
+                        {name.slice(0, 30)}
+                        {name.length >= 30 && '...'}
+                    </h6>
                     <h5>
                         <span>{price}Tk</span>
                         <FaTimes />

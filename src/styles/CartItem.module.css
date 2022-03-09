@@ -24,7 +24,7 @@
 }
 
 .itemNameAndPrice h6 {
-  @apply font-bold text-xs text-[#27ae60];
+  @apply font-bold text-sm text-[#27ae60];
 }
 
 .itemNameAndPrice h5 {
