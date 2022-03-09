@@ -6,7 +6,7 @@ import classes from '../styles/NavRight.module.css';
 import Account from './Account';
 import Cart from './Cart';
 import NavBtn from './NavBtn';
-import Wishlist from './Wishlist';
+import WishlistIcon from './WishlistIcon';
 
 const NavRight = () => {
     const [showNavRight, setShowNavRight] = useState(false);
@@ -36,7 +36,7 @@ const NavRight = () => {
                     showNavRight ? classes.showNavRightElements : classes.hideNavRightElements
                 } ${classes.navRightElements}`}
             >
-                <Wishlist />
+                <WishlistIcon />
                 <Cart />
                 {/* show based in auth */}
                 <Account />
