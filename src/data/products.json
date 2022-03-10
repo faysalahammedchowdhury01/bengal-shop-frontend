@@ -1,7 +1,7 @@
 [
   {
     "productId": "1",
-    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/pomegranate.png",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/product-1.png",
     "name": "Product Name - 1",
     "price": 750,
     "haveDiscount": true,
@@ -11,7 +11,7 @@
   },
   {
     "productId": "2",
-    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/pomegranate.png",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/product-2.png",
     "name": "Product Name - 2",
     "price": 700,
     "haveDiscount": true,
@@ -21,7 +21,7 @@
   },
   {
     "productId": "3",
-    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/pomegranate.png",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/product-3.png",
     "name": "Product Name - 3",
     "price": 450,
     "haveDiscount": true,
@@ -31,7 +31,7 @@
   },
   {
     "productId": "4",
-    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/pomegranate.png",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/product-4.png",
     "name": "Product Name - 4",
     "price": 300,
     "haveDiscount": true,
@@ -41,7 +41,7 @@
   },
   {
     "productId": "5",
-    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/pomegranate.png",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/product-5.png",
     "name": "Product Name - 5",
     "price": 400,
     "haveDiscount": true,
@@ -51,7 +51,7 @@
   },
   {
     "productId": "6",
-    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/pomegranate.png",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/product-6.png",
     "name": "Product Name - 6",
     "price": 600,
     "haveDiscount": true,
@@ -61,7 +61,7 @@
   },
   {
     "productId": "7",
-    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/pomegranate.png",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/product-7.png",
     "name": "Product Name - 7",
     "price": 600,
     "haveDiscount": true,
@@ -71,7 +71,7 @@
   },
   {
     "productId": "8",
-    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/pomegranate.png",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/product-8.png",
     "name": "Product Name - 8",
     "price": 600,
     "haveDiscount": true,
@@ -81,7 +81,7 @@
   },
   {
     "productId": "9",
-    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/pomegranate.png",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/product-1.png",
     "name": "Product Name - 9",
     "price": 600,
     "haveDiscount": true,
@@ -91,7 +91,7 @@
   },
   {
     "productId": "10",
-    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/pomegranate.png",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/product-2.png",
     "name": "Product Name - 10",
     "price": 600,
     "haveDiscount": true,
@@ -101,7 +101,7 @@
   },
   {
     "productId": "11",
-    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/pomegranate.png",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/product-3.png",
     "name": "Product Name - 11",
     "price": 600,
     "haveDiscount": true,
@@ -111,7 +111,7 @@
   },
   {
     "productId": "12",
-    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/pomegranate.png",
+    "img": "https://raw.githubusercontent.com/faysalahammedchowdhury01/bengal-shop-frontend/main/src/assets/images/product-4.png",
     "name": "Product Name - 12",
     "price": 600,
     "haveDiscount": true,
