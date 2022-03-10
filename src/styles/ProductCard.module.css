@@ -1,5 +1,9 @@
 .thumbnailBox {
-  @apply relative bg-[#f9f9f9] p-5 rounded-xl flex items-center justify-center overflow-hidden;
+  @apply relative bg-[#f5f5f5] p-5 rounded-xl flex items-center justify-center overflow-hidden;
+}
+
+.thumbnailBox img {
+  @apply w-full h-full;
 }
 
 .productThumbnailOverlay {
