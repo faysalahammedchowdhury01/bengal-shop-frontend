@@ -2,6 +2,7 @@
   @apply w-full h-screen bg-[#000000bd] fixed top-0 left-0 transition-all opacity-0 invisible;
   line-height: 32px;
   z-index: 99999999999999999 !important;
+  backdrop-filter: blur(3px);
 }
 
 .sidebar.sidebarOpen {

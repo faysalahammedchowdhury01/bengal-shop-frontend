@@ -1,5 +1,6 @@
 .modal {
   @apply fixed top-0 left-0 z-50 w-full h-full overflow-x-hidden overflow-y-auto outline-none bg-[#000000bd] hidden px-5;
+  backdrop-filter: blur(3px);
 }
 
 .modalOpen {
