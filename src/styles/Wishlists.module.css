@@ -1,3 +1,7 @@
 .wishlistsSection {
   @apply pt-10;
 }
+
+.emptyMessage {
+  @apply font-medium text-xl text-center text-gray-500;
+}
