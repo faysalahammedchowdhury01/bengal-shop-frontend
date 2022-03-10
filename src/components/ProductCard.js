@@ -1,14 +1,27 @@
 import React, { useContext, useState } from 'react';
-import { AiFillStar, AiOutlineMinus, AiOutlinePlus, AiOutlineStar } from 'react-icons/ai';
+import {
+    AiFillHeart,
+    AiFillStar,
+    AiOutlineHeart,
+    AiOutlineMinus,
+    AiOutlinePlus,
+    // eslint-disable-next-line prettier/prettier
+    AiOutlineStar
+} from 'react-icons/ai';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import Rating from 'react-rating';
 import CartContext from '../contexts/cart/CartContext';
+import WishlistContext from '../contexts/wishlist/WishlistContext';
 import classes from '../styles/ProductCard.module.css';
 import Button from './Button';
 import ProductDetailsModal from './ProductDetailsModal';
 
 const ProductCard = ({ product }) => {
+    const { productId, name, img, price, haveDiscount, priceAfterDiscount, rating, ratingGiven } =
+        product;
+
     const [showProductDetailsModal, setShowProductDetailsModal] = useState(false);
+
     const {
         addToCart,
         addOneQuantity,
@@ -17,8 +30,9 @@ const ProductCard = ({ product }) => {
         isThisProductInCart,
         quantityOfThisProductInCart,
     } = useContext(CartContext);
-    const { productId, name, img, price, haveDiscount, priceAfterDiscount, rating, ratingGiven } =
-        product;
+
+    const { addToWishlist, removeFromWishlist, isThisProductInWishlist } =
+        useContext(WishlistContext);
 
     // decrease quantity and when quantity is 1 then remove the item from cart
     const decreaseQuantity = (id) => {
@@ -37,6 +51,25 @@ const ProductCard = ({ product }) => {
                     <div
                         className={`group-hover:opacity-100 group-hover:visible ${classes.productThumbnailOverlay}`}
                     >
+                        <div className={classes.wishlistIconBox}>
+                            {isThisProductInWishlist(productId) ? (
+                                <button
+                                    type="button"
+                                    onClick={() => removeFromWishlist(productId)}
+                                    title="In Wishlist"
+                                >
+                                    <AiFillHeart color="red" />
+                                </button>
+                            ) : (
+                                <button
+                                    type="button"
+                                    onClick={() => addToWishlist(product)}
+                                    title="Add to Wishlist"
+                                >
+                                    <AiOutlineHeart />
+                                </button>
+                            )}
+                        </div>
                         {isThisProductInCart(productId) ? (
                             <div className={classes.quantityBox}>
                                 <button type="button" onClick={() => decreaseQuantity(productId)}>
