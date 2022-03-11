@@ -13,7 +13,7 @@ const useLoadMoreProducts = (products = [], initialShowProductQuantity = 4) => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [displayProductQuantity]);
 
-    const isAvailableProducts = displayProductQuantity <= products.length;
+    const isAvailableProducts = !(displayProductQuantity >= products.length);
 
     return {
         setDisplayProductQuantity,
