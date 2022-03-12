@@ -8,7 +8,7 @@
 }
 
 .navRightElements {
-  @apply bg-white shadow-lg lg:shadow-none p-5 container lg:w-auto lg:p-0 rounded lg:bg-transparent absolute lg:static left-0 top-2/4 flex flex-col lg:flex-row items-start lg:items-center space-y-3 lg:space-y-0 lg:space-x-6 text-[#4f4f4f] lg:justify-end z-10 border lg:border-0;
+  @apply bg-white shadow-lg lg:shadow-none p-5 container lg:w-auto lg:p-0 rounded lg:bg-transparent absolute lg:static left-0 top-2/4 flex flex-col lg:flex-row items-start lg:items-center space-y-3 lg:space-y-0 lg:space-x-[10px] text-[#4f4f4f] lg:justify-end z-10 border lg:border-0;
 }
 
 .showNavRightElements {

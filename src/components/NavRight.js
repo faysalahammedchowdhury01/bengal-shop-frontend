@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
 import HamburgerMenu from 'react-hamburger-menu';
-import { FiLogOut } from 'react-icons/fi';
+import { AiOutlineUserAdd } from 'react-icons/ai';
+import { FiLogIn, FiLogOut } from 'react-icons/fi';
+import useAuth from '../hooks/useAuth';
 import useOutsideAlerter from '../hooks/useOutsideAlerter';
 import classes from '../styles/NavRight.module.css';
 import Account from './Account';
@@ -10,6 +12,8 @@ import WishlistIcon from './WishlistIcon';
 
 const NavRight = () => {
     const [showNavRight, setShowNavRight] = useState(false);
+
+    const auth = useAuth();
 
     // close nav categories when clicked on outside
     const wrapperRef = useRef(null);
@@ -39,8 +43,17 @@ const NavRight = () => {
                 <WishlistIcon />
                 <Cart />
                 {/* show based in auth */}
-                <Account />
-                <NavBtn text="Logout" icon={<FiLogOut fontSize="20px" />} />
+                {auth ? (
+                    <>
+                        <Account />
+                        <NavBtn text="Logout" icon={<FiLogOut fontSize="22px" />} />
+                    </>
+                ) : (
+                    <>
+                        <NavBtn text="Login" icon={<FiLogIn fontSize="22px" />} />
+                        <NavBtn text="Singup" icon={<AiOutlineUserAdd fontSize="22px" />} />
+                    </>
+                )}
             </div>
         </div>
     );
