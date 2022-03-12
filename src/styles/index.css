@@ -45,6 +45,10 @@ code {
   @apply font-medium text-[22px] sm:text-[28px] text-[#333333];
 }
 
+input:focus {
+  outline: 0 !important;
+}
+
 button:disabled {
   @apply !cursor-not-allowed;
 }

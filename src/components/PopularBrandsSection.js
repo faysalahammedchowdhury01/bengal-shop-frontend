@@ -31,7 +31,7 @@ const PopularBrandsSection = () => (
                     <SwiperSlide key={brand.name}>
                         <Link
                             className={classes.popularBrand}
-                            to={`brand/${brand.name.split(' ').join('-').toLowerCase()}`}
+                            to={`/${brand.name.split(' ').join('-').toLowerCase()}`}
                         >
                             <img src={brand.img} alt={brand.name} />
                         </Link>

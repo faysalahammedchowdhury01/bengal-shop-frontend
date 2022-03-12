@@ -1,0 +1,31 @@
+.signupSection {
+  @apply py-10;
+}
+
+.signupBox {
+  @apply max-w-full w-[450px] mx-auto bg-gray-100 py-10 px-8 rounded;
+}
+
+.signupHeading {
+  @apply text-center text-2xl text-gray-800 uppercase font-semibold mb-5;
+}
+
+.signupForm {
+  @apply flex flex-col space-y-4;
+}
+
+.signupInput {
+  @apply w-full rounded py-[10px] px-3 ring-offset-2 focus:ring-2 ring-gray-300;
+}
+
+.endBox {
+  @apply mt-5 text-center;
+}
+
+.link {
+  @apply text-blue-400 underline;
+}
+
+.or {
+  @apply my-4;
+}
