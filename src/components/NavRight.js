@@ -50,8 +50,12 @@ const NavRight = () => {
                     </>
                 ) : (
                     <>
-                        <NavBtn text="Login" icon={<FiLogIn fontSize="22px" />} />
-                        <NavBtn text="Singup" icon={<AiOutlineUserAdd fontSize="22px" />} />
+                        <NavBtn link="login" text="Login" icon={<FiLogIn fontSize="22px" />} />
+                        <NavBtn
+                            link="signup"
+                            text="Singup"
+                            icon={<AiOutlineUserAdd fontSize="22px" />}
+                        />
                     </>
                 )}
             </div>
